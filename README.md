@@ -28,14 +28,15 @@ o	Upload the document (pdf) for which you want chat bot.
 o	Choose the pre-defined rubric (IELTS/TOEFL) or upload the custom rubric.
 o	The rubric tool analyses the student's essay against the selected rubric's criteria.
 
-##Architecture:
+## Architecture:
 
 ![image](https://github.com/user-attachments/assets/2d9220ce-9573-4a09-9aa5-85d26747750e)
-Step 1: Data Collection:
+
+- **Step 1: Data Collection:**
 Once the document is uploaded it initiates chat scholar which automatically convert the extract the data from the document and convert the data into small chunks size. 
-Step 2: Embeddings Generation
+- **Step 2: Embeddings Generation**
 In this stage, textual data is converted into numerical embeddings using advanced techniques. These embeddings capture the semantic relationships within the data, enabling to retrieve and analyze information efficiently
-Step 3: Query Execution 
+- **Step 3: Query Execution **
 Once the processing is done, Chat Scholar uses OpenAI Large Language Model (LLM) to generate the response. Both context and query is passed to the LLM to generate the best possible response.
 
 ## Product Demo:
@@ -44,7 +45,7 @@ Once the processing is done, Chat Scholar uses OpenAI Large Language Model (LLM)
 
 ![image](https://github.com/user-attachments/assets/05f9aa99-447e-444e-9e9e-45455eafda61)
 
-Product Report:
+## Product Report:
 Chat Scholar represents a significant step towards leveraging AI to create a more engaging and effective learning experience for students, empowering them to excel in their academic pursuits.
 
 
