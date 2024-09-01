@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="relative isolate overflow-hidden bg-white">
+        <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+            aria-hidden="true">
+            <defs>
+                <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M.5 200V.5H200" fill="none" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+        </svg>
+        <form action="/">
+            <button type="submit"
+                class=" my-2 bg-gradient-to-bl from-green-300 via-blue-500 to-cyan-600 px-8 rounded-2xl py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                Back</button>
+        </form>
+        <div class="mx-auto sm:h-screen w-screen flex flex-col sm:flex-row justify-center items-center px-6 pb-24 pt-10
+            sm:pb-32 lg:flex lg:px-20 lg:py-20">
+            <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+                <img src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1710486664/hdbyd4gkogrzdk3lb23j.png"
+                    class="h-16 w-16 ml-4" alt="">
+
+                <!-- <h1 class="text-3xl font-semibold ">ZEP</h1> -->
+                <div class="mt-24 sm:mt-32 lg:mt-4">
+                    <a href="#" class="inline-flex space-x-6">
+                        <span
+                            class="rounded-full bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-blue-600/10">
+                            Essay Grading Rubric</span>
+                        <span class="inline-flex items-center space-x-1 text-sm font-medium leading-2 text-gray-600">
+
+                            <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </a>
+
+                </div>
+                <!--  -->
+                <form action="/essay_grading" method="post" enctype="multipart/form-data">
+                    <hr class="my-4 ">
+                    <div class="w-6/7">
+                        <div class="relative w-full min-w-[200px]">
+                            <textarea rows="4" cols="60" name="essay_rubric"
+                                class="peer resize-y w-60 border-l-green-300 border-t-blue-500/30 border-r-purple-600/40  border-b-purple-500/30 h-full min-h-[100px] w-full resize-none rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-cyan-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200/20 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-blue-900/50 focus:border-t-transparent focus:outline-0 disabled:resize-none disabled:border-0 disabled:bg-blue-gray-50"
+                                placeholder=" "></textarea>
+                            <label
+                                class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                                Grading Rubric
+                            </label>
+                        </div>
+                        <button type="submit"
+                            class=" my-2 bg-gradient-to-bl from-green-300 via-blue-500 to-cyan-600 px-8 rounded-2xl py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Continue</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
